@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Client1 {
     public static void main(String args[]) throws IOException{
         try{
-            Socket client = new Socket("localhost",6666);
+            Socket client = new Socket("192.168.5.60",6666);
         
             PrintWriter out = new PrintWriter(client.getOutputStream(), true);
             BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
