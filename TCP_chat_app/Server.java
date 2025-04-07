@@ -7,7 +7,7 @@ public class Server{
     private static ArrayList<ClientHandler> clientList = new ArrayList<>();
     public static void main(String args[]){
         try{
-            ServerSocket serverSocket = new ServerSocket(6666);
+            ServerSocket serverSocket = new ServerSocket(6666, 0, InetAddress.getByName("192.168.5.60"));
             System.out.println("Server is running...");
 
             //Thread to handle scanning and sending messages from server to client
